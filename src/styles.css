@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+    background-color: rebeccapurple;
+  }
+  
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+}
