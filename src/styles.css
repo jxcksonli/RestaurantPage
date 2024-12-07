@@ -6,10 +6,29 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
 
 }
 
+.name {
+    text-align: center;
+    font-size: 32;
+    
+}
+
+.playwrite-font {
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+
 .button {
     font-family: Arial, Helvetica, sans-serif;
+    width: 10vw;
+    height: 5vh;
+
 }
