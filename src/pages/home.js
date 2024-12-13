@@ -1,10 +1,11 @@
 export function initialload() {
     const contentStart = document.getElementById("content");
+    contentStart.innerHTML = ''; // Clear the content div
 
     // Creating elements
     const descriptionParagraph = document.createElement('p');
     const descriptionStrong = document.createElement('strong');
-    descriptionStrong.textContent = 'Short Description:';
+    descriptionStrong.textContent = 'Description:';
     descriptionParagraph.appendChild(descriptionStrong);
     descriptionParagraph.innerHTML += '<br> Amethyst Bistro is a charming and elegant dining establishment that offers a delightful culinary experience with a focus on fresh, locally-sourced ingredients. The bistro\'s ambiance is inspired by the rich hues of amethyst, creating a serene and inviting atmosphere perfect for any occasion. Guests can enjoy a diverse menu that includes both classic and contemporary dishes, skillfully crafted to please every palate.';
 
