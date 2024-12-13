@@ -1,3 +1,7 @@
 import "./styles.css";
+import { initialload } from './homecontent.js';
 
-console.log("Testing 123");
+// Call the function to load content once the page is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initialload();
+});

@@ -38,3 +38,8 @@ body {
 .button:hover {
     background-color: white;
 }
+
+#content {
+    font-family: Arial;
+    text-align: center;
+}
