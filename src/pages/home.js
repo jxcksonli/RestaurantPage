@@ -1,9 +1,12 @@
+import interiorImageSrc from '../images/instore.jpg';
+
 export function initialload() {
     const contentStart = document.getElementById("content");
     contentStart.innerHTML = ''; // Clear the content div
 
     const instoreImage = document.createElement('img');
-    instoreImage.src = "../images/instore.jpg";
+    instoreImage.src = interiorImageSrc; // Use the imported image path
+    instoreImage.alt = "Amethyst Bistro Interior";
 
     // Creating elements
     const descriptionParagraph = document.createElement('p');
@@ -25,8 +28,8 @@ export function initialload() {
     locationParagraph.innerHTML += '<br> 42 Lavender Boulevard, Crystal Hills 3188';
 
     // Appending elements to the content div
-    contentStart.appendChild(instoreImage);
     contentStart.appendChild(descriptionParagraph);
     contentStart.appendChild(hoursParagraph);
     contentStart.appendChild(locationParagraph);
+    contentStart.appendChild(instoreImage);
 }
