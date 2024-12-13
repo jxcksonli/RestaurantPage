@@ -2,6 +2,9 @@ export function loadcontact() {
     const contentStart = document.getElementById("content");
     contentStart.innerHTML = ''; // Clear the content div
 
+    const exteriorImage = document.createElement('img');
+    exteriorImage.src = "../images/exterior.jpg";
+    
     // Creating elements for the contact information
     const contactTitle = document.createElement('h2');
     contactTitle.textContent = 'Contact Us';
@@ -16,6 +19,7 @@ export function loadcontact() {
     addressParagraph.innerHTML = '<strong>Address:</strong> 42 Lavender Boulevard, Crystal Hills 3188';
 
     // Appending elements to the content div
+    contentStart.appendChild(exteriorImage);
     contentStart.appendChild(contactTitle);
     contentStart.appendChild(phoneParagraph);
     contentStart.appendChild(emailParagraph);

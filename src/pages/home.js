@@ -2,6 +2,9 @@ export function initialload() {
     const contentStart = document.getElementById("content");
     contentStart.innerHTML = ''; // Clear the content div
 
+    const instoreImage = document.createElement('img');
+    instoreImage.src = "../images/instore.jpg";
+
     // Creating elements
     const descriptionParagraph = document.createElement('p');
     const descriptionStrong = document.createElement('strong');
@@ -22,6 +25,7 @@ export function initialload() {
     locationParagraph.innerHTML += '<br> 42 Lavender Boulevard, Crystal Hills 3188';
 
     // Appending elements to the content div
+    contentStart.appendChild(instoreImage);
     contentStart.appendChild(descriptionParagraph);
     contentStart.appendChild(hoursParagraph);
     contentStart.appendChild(locationParagraph);
